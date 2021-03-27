@@ -1,0 +1,110 @@
+.body{
+    margin-top: 5px;
+}
+.body__about{
+    flex: 1;
+    background-color: #feffff;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.body__about__left{
+    margin-left: 50px;
+    flex: 0.5;
+    color: #17252a;
+}
+.body__about__right{
+    flex: 0.5;
+    padding: 20px;
+}
+.body__about__left>h1,.body__howTo__left>h1{
+    margin: 20px;
+    font-size: 50px;
+}
+.body__about__left>h3{
+    margin: 20px;
+}
+hr{
+    width: 50%;
+    margin: auto;
+}
+.body__about__right >form{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    border: 3px solid #583060;
+    border-radius: 3px;
+    padding: 3px;
+}
+.body__about__right>form>input{
+    width: 100%;
+    background: transparent;
+    outline-width: 0;
+    color: black;
+    border: none;
+    padding: 5px;
+}
+.body__about__right>form>button{
+    display: none;
+}
+form > .MuiSvgIcon-root{
+    color: #583060;
+}
+.body__howTo{
+    flex: 1;
+    background-color: #172528;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.body__howTo__left{
+    text-align: center;
+    flex: 1;
+    color: #feffff;
+}
+.body__howTo__left>h1{
+    margin-bottom: 40px;
+
+}
+.body__howTo__left__1{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+.body__howTo__left__1>h1{
+    margin-left: 10px;
+    font-size: 25px;
+}
+.body__howTo__left__1>.MuiSvgIcon-root{
+    font-size: 30px;
+}
+.body__howTo__left>.MuiSvgIcon-root{
+    font-size: 30px;
+    color: #eeeeee;
+}
+.body__about__right__btns{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.body__about__right__btns>Button{
+    transition: 100ms ease-in;
+    border: 3px solid #17252a;
+    background-color: #17252a;
+    text-decoration: none;
+}
+.body__about__right__btns>Button:hover{
+    transform: scale(1.05);
+    background-color: #17252a;
+    text-decoration: none;
+}
+a:-webkit-any-link{
+    text-decoration: none;
+    color: #feffff;
+}
+
+

@@ -1,0 +1,10 @@
+body{
+    background-color: #def2f1; 
+}
+.medicineInfo{
+    width: 100%;
+    margin: 20px auto;
+}
+.medicineInfo>h3{
+    margin: 20px;
+}
