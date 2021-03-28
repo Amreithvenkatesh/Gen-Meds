@@ -29,15 +29,24 @@ hr{
     width: 50%;
     margin: auto;
 }
+.body__about__right__input{
+    border: 2px solid #17252a;
+    display: flex;
+
+}
 .body__about__right >form{
     margin: 20px;
-    display: flex;
-    align-items: center;
-    border: 3px solid #583060;
     border-radius: 3px;
     padding: 3px;
 }
-.body__about__right>form>input{
+.body__about__right__btns>button{
+    margin:10px;
+  height: 50px;
+    width: 200px;
+    background-color: #17252a;
+    color: #feffff;
+}
+.body__about__right__input>input{
     width: 100%;
     background: transparent;
     outline-width: 0;
@@ -85,13 +94,13 @@ form > .MuiSvgIcon-root{
     font-size: 30px;
     color: #eeeeee;
 }
-.body__about__right__btns{
+.body__about__right>form>button{
     padding-top: 20px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
-.body__about__right__btns>Button{
+.body__about__right>form>button:hover{
     transition: 100ms ease-in;
     border: 3px solid #17252a;
     background-color: #17252a;
