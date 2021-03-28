@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Body.css';
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
@@ -6,10 +6,31 @@ import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import {Button} from '@material-ui/core';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 
 
 function Body() {
+    const [medicine,setMedicine]= useState('');
+    const [isPending,setIsPending] = useState(false);
+    const history = useHistory();
+
+
+    const handleSubmit= (e)=>{
+        e.preventDefault();
+        const medicine = {medicine};
+        console.log(medicine)
+        setIsPending(true);
+
+        fetch('http://localhost:8000/vendor/register/',{
+            method:'POST',
+            headers: { "Content-Type":"application/json"},
+            body: JSON.stringify(medicine)
+        }).then(res=>{
+            setIsPending(false);
+            history.push('/');
+        });
+        
+    }
     return (
         <div className="body">
             <div className="body__about">
@@ -21,15 +42,17 @@ function Body() {
                      customer </h3>
                 </div>
                 <div className="body__about__right">
-                <form>
-                    <input type="text" placeholder="Search medicine"/>
-                    <button type="submit">Search</button>
+                <form onSubmit={handleSubmit}>
+                    <div className="body__about__right__input">
+                    <input type="text" placeholder="Search medicine"
+                    value={medicine}
+                    onChange={(e)=>setMedicine(e.target.value)}/>
                     <SearchRoundedIcon />
+                    </div>
+                    <div className="body__about__right__btns">
+                    <Button><Link to="/search" >Search</Link></Button>
+                    </div>
                 </form>
-                <div className="body__about__right__btns">
-                    <Button><Link to="/search" >By Generic Name</Link></Button>
-                    <Button><Link to="/search">By Product Name</Link></Button>
-                </div>
                 </div>    
             </div>
             <div className="body__howTo">
@@ -59,3 +82,4 @@ function Body() {
 }
 
 export default Body
+
