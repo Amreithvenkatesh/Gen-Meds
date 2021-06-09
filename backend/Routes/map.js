@@ -4,8 +4,11 @@ const express=require('express');
 const router=express.Router();
 
 MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, function(err, db) {
-  if (err) throw err;
+  if (err){
+    console.log(err)
+  }
   let dbo = db.db("Gen-meds");
+  //Route for Vendor locations
   router.get('/locations',(req,res)=>{
     dbo.collection('vendor_details').find({}).toArray()
     .then(data=>{
@@ -16,7 +19,6 @@ MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, fu
         res.send('OOH Error')
         console.log(err)
     })
-   
   })
 });
 module.exports=router
