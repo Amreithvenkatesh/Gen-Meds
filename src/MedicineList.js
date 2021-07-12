@@ -9,7 +9,7 @@ import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 
 function MedicineList({medicines}) {
     const [medicine,setmedicine] = useState(null);
-    const apiUrl  = 'http://localhost:3008/medicine/';
+    const apiUrl  = 'https://serene-falls-13179.herokuapp.com/medicine';
 
     useEffect(()=>{
         fetch(apiUrl)
