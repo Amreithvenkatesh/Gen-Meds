@@ -57,7 +57,7 @@ export default function App() {
       <ReactMapGL
         {...viewport}
         maxZoom={20}
-        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+        mapboxApiAccessToken="pk.eyJ1IjoiYW1yZWl0aCIsImEiOiJja21zMG55bnowZDlsMm9zMWN4NzlqMXR0In0.JxDiRT_kLg9Z3e_5RPJTUw"
         onViewportChange={newViewport => {
           setViewport({ ...newViewport });
         }}
