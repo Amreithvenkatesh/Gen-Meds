@@ -19,7 +19,7 @@ export default function App() {
   });
   const mapRef = useRef();
 
-  const url = "http://localhost:3008/locations";
+  const url = "https://serene-falls-13179.herokuapp.com/locations";
   const { data, error } = useSwr(url, { fetcher });
   const kendras = data && !error ? data.slice(0, 8000) : [];
   const points = kendras.map(kendra =>
