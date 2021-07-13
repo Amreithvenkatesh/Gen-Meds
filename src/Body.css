@@ -1,6 +1,8 @@
 .body{
     margin-top: 0px;
 }
+
+
 .body__about,.body__location{
     flex: 1;
     background-color: #111827;

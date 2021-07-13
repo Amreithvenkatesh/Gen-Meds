@@ -1,0 +1,44 @@
+.medicine__det{
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 1em;
+    background-color: #ffffff;
+    height: 200px;
+    width: 600px;
+}
+.medicine__det button{
+    position: absolute;
+    bottom: 10%;
+    border: 2px solid #586e61;
+}
+.medicine__container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    
+}
+.cost{
+    position: absolute;
+    bottom:15%;
+    font-size: large;
+    right:5%;
+    margin-top: 10px;
+    color: #586e61;
+}
+.medicine__head{
+    margin-bottom: 5px;
+    color: #586e61;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.medicine__det h3 div{
+    font-weight: bolder;
+}
+.medicine__det h3{
+    margin-bottom: 5px;
+    color: 
+    #586e61;
+}

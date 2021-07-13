@@ -4,11 +4,13 @@ import {Button} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import LocationSearchingIcon from '@material-ui/icons/LocationSearching';
+// import dna_image from './images/1.jpg'
 
 function Body() {
 
     return (
         <div className="body">
+            <div className="cover">
             <div className="body__about">
                 <div className="body__about__left">
                 <h1>Get Generic Medicines at ease</h1>
@@ -19,9 +21,8 @@ function Body() {
                 <Link to="/search"><Button>Click to search medicines <ArrowRightIcon/></Button></Link>
                 </div>
                 <div className="body__about__right">
-                    
                 </div> 
-            </div> 
+            </div>
 
             <div className="body__location">
                 <div className="body__location__left">
@@ -35,7 +36,7 @@ function Body() {
                 <Link to="/locateStore"><Button>Click to locate stores <ArrowRightIcon/></Button></Link>
                 </div>
             </div>
-            
+        </div>
         </div>
     )
 }

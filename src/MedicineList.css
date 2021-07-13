@@ -1,11 +1,15 @@
 body{
     color: azure;
 }
+.medicineList{
+    margin: 3em;
+}
 .medicineList__search{
+    color: #8a8f96;
+    padding:0px 20px;
     width: 80%;
-    padding: 20px;
     background-color: #1f2937;
-    margin: 10px;
+    margin: 40px;
     margin-left: 10%;
     border-radius: 3rem;
     display: flex;
@@ -13,12 +17,22 @@ body{
     align-items: center;
 }
 .medicineList__search>input{
+    color: #ffffff;
+    font-size: large;
+    padding: 10px;
+    height: 50px;
+    flex: 1;
     background: transparent;
     border: none;
     outline: none;
 }
+.medicineList__data__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .medicineList__data{
-    /* margin: ; */
+    padding: 1em;
     display: flex;
     flex-direction: column;
     flex: 0.5;
@@ -26,6 +40,9 @@ body{
     border-radius: 2rem;
 
     
+}
+.medicineList__container{
+    background-color: #1f2937;
 }
 .medicineList__data__loop{
     border-radius: 1em;
