@@ -8,10 +8,10 @@
 .navbar__left{
     flex:0.25;
 }
-.navbar__left>h1{
+.navbar__left>a>h1{
     color: #feffff;
 }
-.navbar__left>h1>span{
+.navbar__left>a>h1>span{
     padding: 5px;
     border-radius: 5px;
     background-color: #feffff;

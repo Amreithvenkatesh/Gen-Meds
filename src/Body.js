@@ -4,7 +4,6 @@ import {Button} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import LocationSearchingIcon from '@material-ui/icons/LocationSearching';
-// import dna_image from './images/1.jpg'
 
 function Body() {
 
